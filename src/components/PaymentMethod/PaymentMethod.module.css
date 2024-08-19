@@ -1,0 +1,123 @@
+.payment-method__container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: auto;
+}
+
+.payment-method__heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.payment-method__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+.form__row {
+  display: flex;
+  gap: 15px;
+}
+
+.form__input-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.form__input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(218, 213, 213, 0.4);
+}
+
+.form__input--card-number {
+  flex: 0 0 calc(75% - 30px);
+}
+
+.form__input--security-code {
+  flex: 0 0 12%;
+}
+
+.form__input--expiration-date {
+  flex: 0 0 28%;
+}
+
+.payment-method__button-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.payment-method__button {
+  width: 236px;
+  height: 66px;
+  background-color: #002bbc;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 14px 55px 14px 58px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .payment-method__container {
+    padding: 15px;
+  }
+
+  .payment-method__heading {
+    font-size: 20px;
+  }
+
+  .form__row {
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .form__input-group {
+    min-width: 100%;
+  }
+
+  .form__input--card-number,
+  .form__input--security-code,
+  .form__input--expiration-date {
+    flex: 1;
+  }
+
+  .payment-method__button {
+    width: 200px;
+    font-size: 20px;
+    padding: 12px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-method__heading {
+    font-size: 18px;
+  }
+
+  .payment-method__button {
+    width: 180px;
+    font-size: 18px;
+    padding: 10px 40px;
+  }
+  .form__row {
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
